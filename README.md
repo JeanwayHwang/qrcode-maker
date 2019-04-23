@@ -11,6 +11,10 @@ npm run start // 或 python -m SimpleHTTPServer 7001
 浏览器访问locahost:7001 // 访问index.html
 ```
 
+## Usage Interface
+
+![Usage Interface](https://github.com/ryanism37/qrcode-maker/blob/master/asset/demo.png)
+
 ### 注意事项
 若直接访问index.html在下载二维码图时会因为引用图片跨域问题导致执行canvas.toDataURL时报错
 启动本地服务器后访问可解决该问题！
