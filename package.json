@@ -1,0 +1,22 @@
+{
+  "name": "qrcode-maker",
+  "version": "1.0.0",
+  "description": "qrcode maker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanism37/qrcode-maker.git"
+  },
+  "keywords": [
+    "qrcode"
+  ],
+  "author": "JeanwayHwang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryanism37/qrcode-maker/issues"
+  },
+  "homepage": "https://github.com/ryanism37/qrcode-maker#readme"
+}
