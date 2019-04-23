@@ -6,32 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>QRCode-Maker</title>
     <script type="text/javascript" src="qrcode.js"></script>
+    <script type="text/javascript" src="minilink.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-    <input id="text" type="text" value="http://www.baidu.com" style="width:80%"/><br/>
-    <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
-
-    <script type="text/javascript">
-        var textEle = document.getElementById("text");
-        var qrcode = new QRCode(document.getElementById("qrcode"), {
-            width : 100,
-            height : 100
-        });
-        
-        function makeCode () {		
-            var url = document.getElementById("text").value;
-            url && qrcode.makeCode(url);
-        }
-        
-        textEle.addEventListener('blur', function() {
-            makeCode();
-        });
-        textEle.addEventListener('keydown', function(e) {
-            if (e.keyCode == 13) {
-                makeCode();
-            }
-        });
-        makeCode();
-    </script>
+    <input id="url" type="text" value="http://www.baidu.com" style="width:80%"/><br/>
+    <div id="qrcode" style="display: none;"></div>
+    <canvas id="canvas" width="156" height="156"></canvas><br/>
+    <button onclick="handleClick()">create qrcode & download</button>
 </body>
+
 </html>

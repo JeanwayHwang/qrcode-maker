@@ -4,7 +4,7 @@
   "description": "qrcode maker",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "python -m SimpleHTTPServer 7001"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/ryanism37/qrcode-maker/issues"
   },
-  "homepage": "https://github.com/ryanism37/qrcode-maker#readme"
+  "homepage": "https://github.com/ryanism37/qrcode-maker#readme",
+  "dependencies": {
+  }
 }
